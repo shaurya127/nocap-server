@@ -13,6 +13,10 @@ admin.initializeApp({
 });
 
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+}
+)
 
 app.post('/alert',(req,res)=>{
     console.log(req.body)
